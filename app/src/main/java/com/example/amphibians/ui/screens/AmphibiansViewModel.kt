@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import com.example.amphibians.AmphibiansApplication
 import com.example.amphibians.data.AmphibianRepository
 import com.example.amphibians.data.DefaulAmphibiansRepository
 import com.example.amphibians.model.Amphibian
@@ -54,7 +55,7 @@ class AmphibiansViewModel(
             initializer {
                 val application = (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY]
                         as AmphibiansApplication)
-                val amphibiansRepository = application.container.amphibiansRepository
+                val amphibiansRepository = application.container.amphibianRepository
                 AmphibiansViewModel(amphibiansRepository = amphibiansRepository)
             }
         }
