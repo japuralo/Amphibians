@@ -16,6 +16,5 @@
 -->
 
 <resources>
-
-    <style name="Theme.Amphibians" parent="android:Theme.Material.Light.NoActionBar" />
+    <dimen name="padding_medium">16dp</dimen>
 </resources>
